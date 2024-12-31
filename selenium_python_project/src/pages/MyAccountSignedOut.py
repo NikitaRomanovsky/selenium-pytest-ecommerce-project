@@ -14,7 +14,7 @@ class MyAccountSignedOut(MyAccountSignedOutLocators):
         base_url = get_base_url()
         self.driver.get(f"{base_url}/my-account/")
 
-    def input_login_username(self, username):
+    def input_login_username_or_email(self, username):
         self.selenium.wait_and_input_text(self.LOGIN_USERNAME, username)
 
     def input_login_password(self, password):
@@ -34,3 +34,9 @@ class MyAccountSignedOut(MyAccountSignedOutLocators):
 
     def click_register_button(self):
         self.selenium.wait_and_click(self.REGISTER_BUTTON)
+
+    def verify_helper_text_is_present(self, text):
+        self.selenium.wait_until_element_contains_text(self.HELPER_TEXT, text)
+
+    def verify_register_button_is_disabled(self, attribute):
+        self.selenium.wait_until_element_has_attribute(self.REGISTER_BUTTON, attribute)

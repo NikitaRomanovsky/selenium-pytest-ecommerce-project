@@ -12,3 +12,5 @@ class MyAccountSignedOutLocators:
     REGISTER_EMAIL = (By.ID, "reg_email")
     REGISTER_PASSWORD = (By.ID, "reg_password")
     REGISTER_BUTTON = (By.CSS_SELECTOR, 'button[value="Register"]')
+
+    HELPER_TEXT = (By.CSS_SELECTOR, ".woocommerce-password-strength")

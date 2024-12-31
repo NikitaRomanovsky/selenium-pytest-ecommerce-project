@@ -75,3 +75,12 @@ class SeleniumExtended:
             .text
         )
         return element_text
+
+    def wait_until_element_has_attribute(self, locator, attribute, timeout=None):
+        timeout = timeout if timeout else self.default_timeout
+        WebDriverWait(self.driver, timeout).until(
+            EC.visibility_of_element_located(locator)
+        )
+        WebDriverWait(self.driver, timeout).until(
+            EC.element_attribute_to_include(locator, attribute)
+        )
