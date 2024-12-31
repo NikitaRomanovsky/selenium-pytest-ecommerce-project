@@ -39,3 +39,15 @@ This project is a Selenium-based automation framework designed for testing a Wor
 - Tests are organized in folders based on the feature or functionality they test.
 - Helper functions assist with common tasks such as generating random emails and interacting with the database.
 - HTML reports and screenshots are captured for failed tests to aid debugging.
+
+## How my website looks like:
+
+<img width="600" alt="Screenshot 2024-12-31 at 13 35 39" src="https://github.com/user-attachments/assets/89b1a099-bf60-4262-997d-d5120358d13e" />
+
+<img width="600" alt="Screenshot 2024-12-31 at 13 35 55" src="https://github.com/user-attachments/assets/ebb25699-42d0-4746-961b-41924520bfb4" />
+
+<img width="600" alt="Screenshot 2024-12-31 at 13 35 29" src="https://github.com/user-attachments/assets/f10180c7-8044-42cc-b3f1-fff5a9239e70" />
+
+## How my HTML report looks like:
+
+<img width="600" alt="Screenshot 2024-12-31 at 13 40 36" src="https://github.com/user-attachments/assets/983da0c4-49cb-480a-b325-5895eea77e44" />
