@@ -1,0 +1,14 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python-related files
+__pycache__/
+*.pyc
+*.pyo
+
+# Test files
+/venv/
+/__pycache__/
+
+
