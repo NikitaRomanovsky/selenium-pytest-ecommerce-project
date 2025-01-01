@@ -9,5 +9,5 @@ class MyAccountSignedIn(MyAccountSignedInLocators):
         self.driver = driver
         self.selenium = SeleniumExtended(self.driver)
 
-    def verify_user_is_signed_in(self):
-        self.selenium.wait_until_element_is_visible(self.NAVIGATION_PANEL_LOGOUT_BUTTON)
+    def verify_user_is_signed_in(self, text):
+        self.selenium.wait_until_element_contains_text(self.USER_GREETING, text)

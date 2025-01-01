@@ -1,7 +1,7 @@
 from selenium_python_project.src.SeleniumExtended import SeleniumExtended
 from selenium_python_project.src.pages.locators.CartPageLocators import CartPageLocators
 from selenium_python_project.src.configs.generic_configs import GeneralConfigs
-
+from selenium_python_project.src.helpers.config_helpers import get_base_url
 
 
 class CartPage(CartPageLocators):
@@ -10,10 +10,11 @@ class CartPage(CartPageLocators):
         self.selenium = SeleniumExtended(self.driver)
 
     def go_to_cart_page(self):
-        pass
+        base_url = get_base_url()
+        self.driver.get(f"{base_url}/cart/")
 
     def get_all_product_names(self):
-        product_names_elements = self.selenium.wait_and_get_elements(
+        product_names_elements = self.selenium.wait_and_get_visible_elements(
             self.PRODUCT_NAMES_IN_CART
         )
         product_names = [i.text for i in product_names_elements]

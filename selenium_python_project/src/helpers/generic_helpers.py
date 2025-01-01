@@ -18,3 +18,15 @@ def generate_random_email(domain=None, email_prefix=None):
     logger.info(f"Generated random email is {email}")
 
     return email
+
+
+def generate_random_password():
+    random_password_string_length = 10
+    random_string = "".join(
+        random.choices(string.ascii_letters, k=random_password_string_length)
+    )
+
+    password = f"TEST_{random_string}_12345"
+    logger.info(f"Generated random password is {password}")
+
+    return password

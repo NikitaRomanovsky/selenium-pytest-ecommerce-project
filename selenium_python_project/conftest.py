@@ -5,7 +5,7 @@ from selenium import webdriver
 import os
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture(scope="function")
 def initialize_driver(request):
     supported_browsers = ["chrome", "ch", "headlesschrome", "firefox", "ff"]
     browser = os.environ.get("BROWSER", None)
