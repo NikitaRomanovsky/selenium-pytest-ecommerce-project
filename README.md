@@ -1,7 +1,7 @@
 # Selenium Python Project
 
 ## Description
-This project is a Selenium-based automation framework designed for testing a WordPress-based eCommerce site. The tests cover various scenarios, including login functionalities, checkout processes, and order verification.
+This project is a Selenium-based automation framework designed for testing a WordPress-based eCommerce site. The tests cover various scenarios, including login functionalities, checkout processes, order verification and product details configuration. The eCommerce site and its BackEnd (DB and API) run locally.
 
 ## Technologies Used
 - Python
@@ -15,6 +15,7 @@ This project is a Selenium-based automation framework designed for testing a Wor
    - **config_helper**: Provides methods to retrieve configuration such as base URLs and database credentials.
    - **database_helper**: Handles database interactions, such as fetching order information.
    - **generic_helper**: Contains utility functions like generating random emails.
+   - **api_helper**: Handles API interactions, such as creating new user.
 
 2. **Pages**: 
    - Page Object Model (POM) is implemented using separate classes for each page with dedicated locators and methods.
@@ -37,7 +38,7 @@ This project is a Selenium-based automation framework designed for testing a Wor
 - Page Object Model (POM) structure is used, with all page-specific functions stored in dedicated classes.
 - All locators are organized in separate locator files specific to each page.
 - Tests are organized in folders based on the feature or functionality they test.
-- Helper functions assist with common tasks such as generating random emails and interacting with the database.
+- Helper functions assist with common tasks such as generating random emails, interacting with the database and sending API requests.
 - HTML reports and screenshots are captured for failed tests to aid debugging.
 
 ## How my website looks like:
